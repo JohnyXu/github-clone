@@ -26,6 +26,7 @@ module.exports = {
     '^@context/(.*)$': '<rootDir>/src/context/$1',
     '^@lib/(.*)$': '<rootDir>/src/lib/$1',
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules/?!(rehype-raw)'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',

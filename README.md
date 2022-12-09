@@ -2,24 +2,29 @@
 
 This demo application is a small re-implementation of some GitHub pages / functionality built using their GraphQL API.
 
-Amplify URL: https://main.d31pj5m17ne70k.amplifyapp.com
-
 ## Table of Contents
 
-- [Overview](#overview)
-  - [Featured Tech Stack](#featured-tech-stack)
-  - [Included Tooling](#included-tooling)
-  - [Demo Application Libraries](#demo-application-libraries)
-- [Getting Started](#getting-started)
-  - [Downloading](#downloading)
-  - [Installation](#installation)
-  - [Generated Files](#generated-files)
-- [Configuration](#configuration)
-  - [Environment Variables](#environment-variables)
-  - [OAuth Setup](#oauth-setup)
-  - [JWT Encryption Keys](#jwt-encryption-keys)
-- [Development](#development)
-- [Deployment](#deployment)
+- [next-react-query-tailwind](#next-react-query-tailwind)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Featured Tech Stack](#featured-tech-stack)
+    - [Included Tooling](#included-tooling)
+    - [Demo Application Libraries](#demo-application-libraries)
+  - [Getting Started](#getting-started)
+    - [Downloading](#downloading)
+      - [Git](#git)
+      - [GitHub CLI](#github-cli)
+    - [Installation](#installation)
+    - [Generated Files](#generated-files)
+  - [Configuration](#configuration)
+    - [Environment Variables](#environment-variables)
+    - [OAuth Setup](#oauth-setup)
+    - [JWT Encryption Keys](#jwt-encryption-keys)
+      - [`JWT_SECRET`](#jwt_secret)
+      - [`JWT_SIGNING_KEY`](#jwt_signing_key)
+      - [`JWT_ENCRYPTION_KEY`](#jwt_encryption_key)
+  - [Development](#development)
+  - [Deployment](#deployment)
 
 ## Overview
 
@@ -152,4 +157,3 @@ Open your browser to [http://localhost:3000](http://localhost:3000)
 
 This demo app gets deployed to AWS Amplify on changes to the `main` branch.
 
-https://main.d31pj5m17ne70k.amplifyapp.com

@@ -7,6 +7,18 @@ import { RepoProvider } from '@context/RepoContext';
 
 jest.mock('react-markdown', () => () => null);
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: '',
+      asPath: '',
+      push: jest.fn(),
+    };
+  },
+}));
+
 setLogger({
   log: console.log,
   warn: console.warn,

@@ -12,6 +12,18 @@ setLogger({
 
 setupMswServer();
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: '',
+      asPath: '',
+      push: jest.fn(),
+    };
+  },
+}));
+
 describe('UserRepos', () => {
   test('displays an error to user if repos are unable to be fetched', async () => {
     const RouterProvider = createRouterProvider();
@@ -30,6 +42,7 @@ describe('UserRepos', () => {
         <UserRepos username="testuser" />
       </RouterProvider>
     );
+
     expect(await screen.findByText('jquery.shiptime')).toBeInTheDocument();
     expect(await screen.findByText('hapi-sequelize')).toBeInTheDocument();
     expect(

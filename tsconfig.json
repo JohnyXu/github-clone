@@ -21,6 +21,11 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../remix/app/components/UserRepos/parseQuery.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../remix/app/components/UserRepos/parseQuery.ts"
+  ],
   "exclude": ["node_modules"]
 }
